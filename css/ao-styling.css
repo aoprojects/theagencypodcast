@@ -109,6 +109,15 @@ h3 {
 section {
 	padding: 40px;
 }
+.red-line-after:after {
+ 	width:10%; 
+ 	height:1px; 
+ 	background: red; 
+ 	content:"";
+ 	text-align: center;
+ 	margin: 0 auto;
+ 	margin-top: 40px;
+}
 #social-container a {
 	color: red;
 	padding: 20px;
