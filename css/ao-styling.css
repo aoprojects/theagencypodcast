@@ -10,16 +10,13 @@ a {
 a:hover {
 	text-decoration: none;
 }
-
 #agile-sign-up-form {
 	margin: 0 auto;
 	text-align: center;
 }
-
 #agile-sign-up-form .form-control {
 
 }
-
 .blue {
 	color: #5CA3D1 !important;
 }
@@ -27,16 +24,17 @@ a:hover {
 .blue-lighter {
 	color: #ACD0E7 !important;
 }
-
+body {
+	background-image: url('images/gplaypattern.png');
+	background-repeat: repeat;
+}
 .centered {
 	margin: 0 auto;
 }
-
 #coming-soon {
 	position: relative;
 	top: 15px;
 }
-
 footer {
 	border-top: 1px solid gray;
 	padding: 30px;
