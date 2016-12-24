@@ -36,8 +36,13 @@ body {
 	top: 15px;
 }
 footer {
-	border-top: 1px solid gray;
+	border-top: 1px solid #eee;
 	padding: 30px;
+	color: black !important;
+	background: red;
+}
+footer img:hover {
+	box-shadow: gray;
 }
 .footer-logo {
 	width: 100px;
@@ -53,6 +58,12 @@ h3 {
 	padding: 15px;
 	color: black;
 	font-size: 16px;
+}
+h6 a {
+	color: black;
+}
+h6 a:hover {
+	color: red;
 }
 .green {
 
@@ -120,6 +131,15 @@ section {
  	margin: 0 auto;
  	margin-top: 40px;
 }
+.red-line-before:before {
+ 	width:10%; 
+ 	height:1px; 
+ 	background: red; 
+ 	content:"";
+ 	text-align: center;
+ 	margin: 0 auto;
+ 	margin-bottom: 40px;
+ }
 #social-container img {
 	color: gray;
 }
