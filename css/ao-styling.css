@@ -100,6 +100,11 @@ h6 a:hover {
 #portfolio-items h3 {
 	padding-bottom: 30px;
 }
+#portfolio-items small {
+	text-align: right;
+	float: right;
+	color: gray;
+}
 #portfolio-items ul {
 	width: 100vw;
 	position: relative;
