@@ -25,8 +25,7 @@ a:hover {
 	color: #ACD0E7 !important;
 }
 body {
-	background-image: url('images/gplaypattern.png');
-	background-repeat: repeat;
+
 }
 .centered {
 	margin: 0 auto;
@@ -116,6 +115,7 @@ h6 a:hover {
 #portfolio-items .portfolio-item-description {
 	margin: 20px;
 	font-size: 18px;
+	text-align: left;
 }
 #portfolio-items ul li {
 	background: white;
