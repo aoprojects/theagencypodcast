@@ -35,7 +35,7 @@ body {
 	top: 15px;
 }
 footer {
-	border-top: 1px solid #eee;
+	/*border-top: 1px solid #eee;*/
 	padding: 30px;
 	color: black !important;
 	background-color: #eee;
@@ -96,6 +96,9 @@ h6 a:hover {
 #portfolio-items {
 	padding: 0;
 }
+#portfolio-items h3 {
+	padding-bottom: 30px;
+}
 #portfolio-items ul {
 	width: 100vw;
 	position: relative;
@@ -110,10 +113,11 @@ h6 a:hover {
 	text-align: left;
 	list-style-type: none;
 }
-@media only screen and (min-width: 767px) {
+@media only screen and (min-width: 768px) {
 	#portfolio-items ul li {
 		width: 50% !important;
 		float: left;
+		height: 300px;
 	}
 }
 
