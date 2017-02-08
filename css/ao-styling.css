@@ -27,6 +27,11 @@ a:hover {
 body {
 
 }
+.brand-logos {
+	max-width: 200px;
+	position: absolute;
+	/*display: none;*/
+}
 .centered {
 	margin: 0 auto;
 }
