@@ -90,6 +90,19 @@ h6 a:hover {
 	padding-top: 35px;
 	/*box-shadow: 1px 1px 5px rgba(92,163,209,0.3); /* transparent blue */*/
 }
+/*for the hamburger menu icon*/
+#menu-toggle {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	font-size: 20px;
+	outline: none;
+	border: none;
+}
+#menu-toggle:hover, #menu-toggle:active, #menu-toggle:visited {
+	border-radius: 0px;
+}
+
 .no-border-before {
 	box-shadow: none !important;
 	border-top: none;
