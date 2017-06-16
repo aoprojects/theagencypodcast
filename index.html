@@ -16,6 +16,7 @@
 <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
 <link href="css/responsive.css" rel="stylesheet" type="text/css">
 <link href="css/animate.css" rel="stylesheet" type="text/css">
+<link href="css/simple-sidebar.css" rel="stylesheet">
 <link href="css/ao-styling.css" rel="stylesheet" type="text/css">
 
 <!--[if IE]><style type="text/css">.pie {behavior:url(PIE.htc);}</style><![endif]-->
@@ -39,15 +40,20 @@
 </head>
 <body>
 <header class="header" id="header"><!--header-start-->
+
+
+
+
+
+
+
+  
   <div class="container">
-      <nav>
-        <div id="hamburger-icon">hamburger</div>
-        <ul id="navigation-menu">  
-          <li><a href="index.html">Companies</a></li>
-          <li><a href="product-consulting.html">Consulting</a></li>
-          <li><a href="americans-and-their-money-book.html">The Book</a></li>
-        </ul>
-      </nav>
+
+      <div id="hamburger">
+        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Menu</a>
+      </div><!-- end #hamburger -->
+   
     	<figure class="animated fadeInDown delay-07s">
             <a href="#">
                 <h1>Alison Ostendorf</h1>
@@ -210,6 +216,14 @@
 			event.preventDefault();
 		});
 	})
+</script>
+
+<!-- Menu Toggle Script -->
+<script>
+$("#menu-toggle").click(function(e) {
+    e.preventDefault();
+    $("#wrapper").toggleClass("toggled");
+});
 </script>
 
 <script type="text/javascript">
