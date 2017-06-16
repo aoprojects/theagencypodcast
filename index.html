@@ -54,7 +54,7 @@
                     <a href="index.html">Companies</a>
                 </li>
                 <li>
-                    <a href="product-consulting.html">Consulting</a>
+                    <a href="product-consulting.html">Product Consulting</a>
                 </li>
                 <li>
                     <a href="americans-and-their-money-book.html">The Book</a>
@@ -196,19 +196,17 @@
 </footer>
 
 
-<script type="text/javascript">
-    $(document).ready(function(e) {
-        $('#test').scrollToFixed();
-        $('.res-nav_click').click(function(){
-            $('.main-nav').slideToggle();
-            return false    
-            
-        });
-        
-    });
-</script>
-
-  <script>
+  <script type="text/javascript">
+      $(document).ready(function(e) {
+          $('#test').scrollToFixed();
+          $('.res-nav_click').click(function(){
+              $('.main-nav').slideToggle();
+              return false    
+              
+          });
+          
+      });
+    // begin js for the wow effects
     wow = new WOW(
       {
         animateClass: 'animated',
@@ -216,84 +214,75 @@
       }
     );
     wow.init();
- 
-  </script>
+     // end js for wow effects
 
+    $(window).load(function(){
+      
+      $('.main-nav li a').bind('click',function(event){
+        var $anchor = $(this);
+        
+        $('html, body').stop().animate({
+          scrollTop: $($anchor.attr('href')).offset().top - 102
+        }, 1500,'easeInOutExpo');
+        /*
+        if you don't want to use the easing effects:
+        $('html, body').stop().animate({
+          scrollTop: $($anchor.attr('href')).offset().top
+        }, 1000);
+        */
+        event.preventDefault();
+      });
+    })
 
-<script type="text/javascript">
-	$(window).load(function(){
-		
-		$('.main-nav li a').bind('click',function(event){
-			var $anchor = $(this);
-			
-			$('html, body').stop().animate({
-				scrollTop: $($anchor.attr('href')).offset().top - 102
-			}, 1500,'easeInOutExpo');
-			/*
-			if you don't want to use the easing effects:
-			$('html, body').stop().animate({
-				scrollTop: $($anchor.attr('href')).offset().top
-			}, 1000);
-			*/
-			event.preventDefault();
-		});
-	})
-</script>
+     // Menu Toggle Script starts below
 
-<!-- Menu Toggle Script -->
-<script>
-$("#menu-toggle").click(function(e) {
-    e.preventDefault();
-    $("#wrapper").toggleClass("toggled");
-});
-</script>
-
-<script type="text/javascript">
-
-$(window).load(function(){
-  
-  
-  var $container = $('.portfolioContainer'),
-      $body = $('body'),
-      colW = 375,
-      columns = null;
-
-  
-  $container.isotope({
-    // disable window resizing
-    resizable: true,
-    masonry: {
-      columnWidth: colW
-    }
-  });
-  
-  $(window).smartresize(function(){
-    // check if columns has changed
-    var currentColumns = Math.floor( ( $body.width() -30 ) / colW );
-    if ( currentColumns !== columns ) {
-      // set new column count
-      columns = currentColumns;
-      // apply width to container manually, then trigger relayout
-      $container.width( columns * colW )
-        .isotope('reLayout');
-    }
-    
-  }).smartresize(); // trigger resize to set container width
-  $('.portfolioFilter a').click(function(){
-        $('.portfolioFilter .current').removeClass('current');
-        $(this).addClass('current');
- 
-        var selector = $(this).attr('data-filter');
-        $container.isotope({
-			
-            filter: selector,
-         });
-         return false;
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
     });
-  
-});
 
-</script>
+    $(window).load(function(){
+      
+      var $container = $('.portfolioContainer'),
+          $body = $('body'),
+          colW = 375,
+          columns = null;
+      
+      $container.isotope({
+        // disable window resizing
+        resizable: true,
+        masonry: {
+          columnWidth: colW
+        }
+      });
+      
+      $(window).smartresize(function(){
+        // check if columns has changed
+        var currentColumns = Math.floor( ( $body.width() -30 ) / colW );
+        if ( currentColumns !== columns ) {
+          // set new column count
+          columns = currentColumns;
+          // apply width to container manually, then trigger relayout
+          $container.width( columns * colW )
+            .isotope('reLayout');
+        }
+        
+      }).smartresize(); // trigger resize to set container width
+      $('.portfolioFilter a').click(function(){
+            $('.portfolioFilter .current').removeClass('current');
+            $(this).addClass('current');
+     
+            var selector = $(this).attr('data-filter');
+            $container.isotope({
+          
+                filter: selector,
+             });
+             return false;
+        });
+      
+    });
+
+  </script>
 </div><!-- end #sidebar-wrapper -->
 </body>
 </html>

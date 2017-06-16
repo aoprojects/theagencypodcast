@@ -40,70 +40,47 @@
 </head>
 <body>
  <div id="wrapper">
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <li class="sidebar-brand">
+                <a href="#">
+                    Alison Ostendorf
+                </a>
+            </li>
+            <li>
+                <a href="index.html">Companies</a>
+            </li>
+            <li>
+                <a href="product-consulting.html">Product Consulting</a>
+            </li>
+            <li>
+                <a href="americans-and-their-money-book.html">The Book</a>
+            </li>
 
-        <!-- Sidebar -->
-        <div id="sidebar-wrapper">
-            <ul class="sidebar-nav">
-                <li class="sidebar-brand">
-                    <a href="#">
-                        Alison Ostendorf
-                    </a>
-                </li>
-                <li>
-                    <a href="index.html">Companies</a>
-                </li>
-                <li>
-                    <a href="product-consulting.html">Consulting</a>
-                </li>
-                <li>
-                    <a href="americans-and-their-money-book.html">The Book</a>
-                </li>
+        </ul>
+    </div><!-- end sidebar wrapper -->
+    <!-- /#sidebar-wrapper -->
+    <div id="page-content-wrapper">
+      <header class="header" id="header"><!--header-start-->
+      	<div class="container-fluid">
+          
+          <div id="hamburger">
+             <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Menu</a>
+           </div><!-- end #hamburger -->
 
-            </ul>
-        </div><!-- end sidebar wrapper -->
-        <!-- /#sidebar-wrapper -->
-
-        <div id="page-content-wrapper">
-
-        <header class="header" id="header"><!--header-start-->
-        	<div class="container-fluid">
-            
-            <div id="hamburger">
-               <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Menu</a>
-             </div><!-- end #hamburger -->
-
-          </div><!-- end .container -->
-        </header><!--header-end-->
-
-
-        <main class="container-fluid">
-
-  <section id="social-container" class="red-line-after red-line-before text-center container animated fadeInUp delay-09s">
-    <h3>Contact Alison</h3><br>
-    <p>
-      <a href="https://twitter.com/OstendorfAlison" target="none" alt="Alison Ostendorf Twitter ">
-        <img src="images/twitter-logo-on-black-background.png">
-        <!-- this icon free from flaticons -->
-      </a>
-      &nbsp;&nbsp;
-      <a href="mailto:aostendorf@gmail.com?Subject=Contact From AlisonOstendorf.com" target="_top">
-        <img src="images/email.png">
-        <!-- this icon free from flaticons by Yannick in web -->
-      </a>
-      &nbsp;&nbsp;
-      <a href="https://www.linkedin.com/in/alison-ostendorf-6a36a020" target="none">
-        <img src="images/linked-in-square-button.png">
-        <!-- this icon free from flaticons -->
-      </a>
-    </p>
-  </section>
-
-
-
-</main>
-<div class="clearfix"></div>
-
-<footer class="footer">
+        </div><!-- end .container -->
+      </header><!--header-end-->
+      <main class="container-fluid">
+        <section class="red-line-after red-line-before text-center container animated fadeInUp delay-09s">
+          <h3>Product Consulting</h3><br>
+          <p>
+            About product consulting
+          </p>
+        </section>
+    </main>
+  <div class="clearfix"></div>
+  <footer class="footer">
     <div class="container">
         <div class="text-center">
           <h6><a href="#">AlisonOstendorf.com</a></h6>
@@ -124,7 +101,6 @@
             </a>
           </p><!-- end social media paragraph -->
           <br>
-          
         </div>
        <!--  <span class="copyright">Copyright © 2015 | <a href="http://bootstraptaste.com/">Bootstrap Themes</a> by BootstrapTaste</span> -->
     </div>
@@ -133,24 +109,19 @@
         Licenseing information is available at: http://bootstraptaste.com/license/
         You can buy this theme without footer links online at: http://bootstraptaste.com/buy/?theme=Knight
     -->
-</footer>
-
-</div><!-- end #page-content-wrapper -->
-
-
-<script type="text/javascript">
-    $(document).ready(function(e) {
-        $('#test').scrollToFixed();
-        $('.res-nav_click').click(function(){
-            $('.main-nav').slideToggle();
-            return false    
-            
-        });
-        
-    });
-</script>
-
-  <script>
+  </footer>
+  </div><!-- end #page-content-wrapper -->
+  <script type="text/javascript">
+      $(document).ready(function(e) {
+          $('#test').scrollToFixed();
+          $('.res-nav_click').click(function(){
+              $('.main-nav').slideToggle();
+              return false    
+              
+          });
+          
+      });
+    // begin js for the wow effects
     wow = new WOW(
       {
         animateClass: 'animated',
@@ -158,83 +129,74 @@
       }
     );
     wow.init();
- 
-  </script>
+     // end js for wow effects
 
+  	$(window).load(function(){
+  		
+  		$('.main-nav li a').bind('click',function(event){
+  			var $anchor = $(this);
+  			
+  			$('html, body').stop().animate({
+  				scrollTop: $($anchor.attr('href')).offset().top - 102
+  			}, 1500,'easeInOutExpo');
+  			/*
+  			if you don't want to use the easing effects:
+  			$('html, body').stop().animate({
+  				scrollTop: $($anchor.attr('href')).offset().top
+  			}, 1000);
+  			*/
+  			event.preventDefault();
+  		});
+  	})
 
-<script type="text/javascript">
-	$(window).load(function(){
-		
-		$('.main-nav li a').bind('click',function(event){
-			var $anchor = $(this);
-			
-			$('html, body').stop().animate({
-				scrollTop: $($anchor.attr('href')).offset().top - 102
-			}, 1500,'easeInOutExpo');
-			/*
-			if you don't want to use the easing effects:
-			$('html, body').stop().animate({
-				scrollTop: $($anchor.attr('href')).offset().top
-			}, 1000);
-			*/
-			event.preventDefault();
-		});
-	})
-</script>
+     // Menu Toggle Script starts below
 
-<!-- Menu Toggle Script -->
-<script>
-$("#menu-toggle").click(function(e) {
-    e.preventDefault();
-    $("#wrapper").toggleClass("toggled");
-});
-</script>
-
-<script type="text/javascript">
-
-$(window).load(function(){
-  
-  
-  var $container = $('.portfolioContainer'),
-      $body = $('body'),
-      colW = 375,
-      columns = null;
-
-  
-  $container.isotope({
-    // disable window resizing
-    resizable: true,
-    masonry: {
-      columnWidth: colW
-    }
-  });
-  
-  $(window).smartresize(function(){
-    // check if columns has changed
-    var currentColumns = Math.floor( ( $body.width() -30 ) / colW );
-    if ( currentColumns !== columns ) {
-      // set new column count
-      columns = currentColumns;
-      // apply width to container manually, then trigger relayout
-      $container.width( columns * colW )
-        .isotope('reLayout');
-    }
-    
-  }).smartresize(); // trigger resize to set container width
-  $('.portfolioFilter a').click(function(){
-        $('.portfolioFilter .current').removeClass('current');
-        $(this).addClass('current');
- 
-        var selector = $(this).attr('data-filter');
-        $container.isotope({
-			
-            filter: selector,
-         });
-         return false;
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
     });
-  
-});
 
-</script>
+    $(window).load(function(){
+      
+      var $container = $('.portfolioContainer'),
+          $body = $('body'),
+          colW = 375,
+          columns = null;
+      
+      $container.isotope({
+        // disable window resizing
+        resizable: true,
+        masonry: {
+          columnWidth: colW
+        }
+      });
+      
+      $(window).smartresize(function(){
+        // check if columns has changed
+        var currentColumns = Math.floor( ( $body.width() -30 ) / colW );
+        if ( currentColumns !== columns ) {
+          // set new column count
+          columns = currentColumns;
+          // apply width to container manually, then trigger relayout
+          $container.width( columns * colW )
+            .isotope('reLayout');
+        }
+        
+      }).smartresize(); // trigger resize to set container width
+      $('.portfolioFilter a').click(function(){
+            $('.portfolioFilter .current').removeClass('current');
+            $(this).addClass('current');
+     
+            var selector = $(this).attr('data-filter');
+            $container.isotope({
+    			
+                filter: selector,
+             });
+             return false;
+        });
+      
+    });
+
+  </script>
 </body>
 </html>
