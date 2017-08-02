@@ -111,6 +111,7 @@ h6 a:hover {
 	font-weight: 400;
 	font-transform: uppercase;
 	font-family: 'Montserrat', sans-serif;
+	width: 100%;
 }
 #nav-desktop ul {
 	text-align: center;
@@ -118,6 +119,7 @@ h6 a:hover {
 	margin: 0;
 	list-style: none;
 	text-decoration: none;
+	width: 70%;
 }
 #nav-desktop ul li {
 	float: left;
@@ -130,10 +132,10 @@ h6 a:hover {
 
 }
 #nav-desktop ul li a:hover {
-	/*color: red;*/
-	background-color: #eee;
+	color: red;
+	/*background-color: #eee;*/
 	border-radius: 0px;
-	color: black;
+	/*color: black;*/
 }
 
 .no-border-before {
