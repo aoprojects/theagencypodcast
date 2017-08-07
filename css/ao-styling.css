@@ -114,12 +114,15 @@ h6 a:hover {
 	width: 100%;
 }
 #nav-desktop ul {
+	position: absolute;
+	top: 0;
+	right: 25px;
 	text-align: center;
 	padding: 0;
-	margin: 0;
+	margin: 0 0 0 0;
 	list-style: none;
 	text-decoration: none;
-	width: 70%;
+	max-width: 500px;
 }
 #nav-desktop ul li {
 	float: left;
