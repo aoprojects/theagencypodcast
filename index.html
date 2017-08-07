@@ -45,6 +45,7 @@
   <div id="wrapper">
       <!-- Sidebar -->
       <div id="sidebar-wrapper">
+      <!-- the sidebar-nav will show only on mobile sizes, sm and xs widths -->
           <ul class="sidebar-nav">
               <li class="sidebar-brand">
                   <a href="index.html">Alison Ostendorf</a>
@@ -63,14 +64,15 @@
       <!-- /#sidebar-wrapper -->
       <div id="page-content-wrapper">
           <header class="header" id="header"><!--header-start-->
-            <div class="container">
-                <nav id="nav-desktop" class="hidden-xs hidden-sm">
+            <!-- the nav-desktop will show only on desktop sizes, md and lg widths and larger -->
+                <nav id="nav-desktop" class="hidden-xs hidden-sm animated fadeInDown delay-07s">
                   <ul>
                     <li><a href="index.html">Startups</a></li>
                     <li><a href="product-consulting.html">Consulting</a></li>
                     <li><a href="books-by-Alison.html">Books</a></li>
                   </ul>
                 </nav>
+            <div class="container">
                 <div id="hamburger-menu" class="hidden-md hidden-lg">
                   <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">
                     <div class="hidden">Menu</div>
