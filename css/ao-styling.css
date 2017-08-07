@@ -141,6 +141,11 @@ h6 a:hover {
 	border-radius: 0px;
 	/*color: black;*/
 }
+#newsletter-desktop-sign-up {
+	position: absolute;
+	top: 50px;
+	right: 40px;
+}
 
 .no-border-before {
 	box-shadow: none !important;
