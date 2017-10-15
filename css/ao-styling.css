@@ -37,6 +37,9 @@ body {
 	position: relative;
 	top: 15px;
 }
+#consulting-page main p, #consulting-page main ul li {
+	font-size: 18px;
+}
 footer {
 	/*border-top: 1px solid #eee;*/
 	margin-top: 60px;
@@ -70,6 +73,10 @@ h6 a {
 }
 h6 a:hover {
 	color: red;
+}
+#consulting-page .header {
+	padding: 40px 100px 10px 100px !important;
+	/*max-height: 120px;*/
 }
 .green {
 
@@ -209,6 +216,9 @@ h6 a:hover {
 }
 section {
 	padding: 40px;
+}
+.red {
+	color: #D95450;
 }
 .red-line-after:after {
  	width:10%; 
