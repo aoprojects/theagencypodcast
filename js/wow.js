@@ -392,7 +392,7 @@
     };
 
     WOW.prototype.disabled = function() {
-      return !this.config.mobile && this.util().isMobile(navigator.userAgent);
+      // return !this.config.mobile && this.util().isMobile(navigator.userAgent);
     };
 
     return WOW;
