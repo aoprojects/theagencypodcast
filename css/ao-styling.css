@@ -288,8 +288,33 @@ h1 {
 		font-size: 15px;
 		padding-top: 25px;
 	}
+}
+@media only screen and (min-width: 570px) and (max-width: 767px) {
+	/*for styling of resume columns on xs size*/
+	.col-xs-12 {
+		width: 400px !important;
+		margin-left: 20% !important;
+	}
+	#resume-title {
+		position: relative;
+		left: -20px;
+	}
+}
+@media only screen and (min-width: 470px) and (max-width: 570px) {
+	.col-xs-12 {
+		width: 400px !important;
+		margin-left: 10% !important;
 
-}/* for xs devices */
+	}
+}
+@media only screen and (max-width: 470px) {
+	.col-xs-12 {
+		width: 330px !important;
+		margin-left: 5% !important;
+
+	}
+
+}
 
 @media only screen and (min-width: 768px) {
 	/*below begins temporary styling, while we don't have headshots. TODO */
@@ -320,7 +345,5 @@ h1 {
 @media only screen and (min-width: 992px) {
 
 }/* for md and lg devices only */
-
-
 
 
