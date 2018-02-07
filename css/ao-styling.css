@@ -40,6 +40,9 @@ body {
 	font-size: 18px;
 }
 /*for simple desktop navigation*/
+#index-page nav a {
+	color: gray;
+}
 #desktop-nav {
 	position: fixed;
 	top: 0;
@@ -66,7 +69,7 @@ body {
 	color: red;
 }
 #desktop-nav ul li.current-page {
-	background: #eee;
+	background: #f2f2f2;
 }
 #dekstop-nav ul li a {
 	color: gray !important;
