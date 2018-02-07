@@ -39,6 +39,44 @@ body {
 #consulting-page main p, #consulting-page main ul li {
 	font-size: 18px;
 }
+/*for simple desktop navigation*/
+#desktop-nav {
+	position: fixed;
+	top: 0;
+	right: 0;
+	height: 50px;
+	width: 100%;
+	background-color: rgba(255,255,255,0.9);
+	z-index: 15;
+}
+#desktop-nav ul {
+	max-width: 400px;
+	float: right;
+}
+#desktop-nav ul li {
+	text-decoration: none;
+	list-style-type: none;
+	padding: 15px 20px;
+	float: left;
+}
+#desktop-nav ul li:last-child {
+	padding-right: 25px;
+}
+#desktop-nav ul li a:hover {
+	color: red;
+}
+#desktop-nav ul li.current-page {
+	background: #eee;
+}
+#dekstop-nav ul li a {
+	color: gray !important;
+	font-size: 18px;
+	font-weight: 200px;
+}
+#dekstop-nav ul li a:visited {
+	color: gray !important;
+}
+/*end for simple desktop navigation*/
 footer {
 	/*border-top: 1px solid #eee;*/
 	margin-top: 60px;
