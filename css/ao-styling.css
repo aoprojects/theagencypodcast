@@ -59,6 +59,9 @@ form {
 form input {
 	text-align: center;
 }
+.gray {
+	color: gray;
+}
 h1:hover {
 	text-decoration: none;
 }
@@ -236,7 +239,18 @@ section {
  	text-align: center;
  	margin: 0 auto;
  	margin-bottom: 40px;
- }
+}
+#resume-page h3 {
+	color: red;
+}
+#resume-page a {
+	color: black;
+	font-weight: 600;
+}
+#resume-title {
+ 	position: relative;
+ 	top: -20px;
+}
 #social-container img {
 	color: gray;
 }
