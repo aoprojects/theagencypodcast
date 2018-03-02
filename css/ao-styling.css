@@ -16,6 +16,15 @@ a:hover {
 #agile-sign-up-form .form-control {
 
 }
+#articles-page h3 {
+	font-size: 28px;
+}
+#articles-apge p, ul {
+	font-size: 16px;
+}
+#articles-page h3 {
+	color: red;
+}
 .blue {
 	color: #5CA3D1 !important;
 }
