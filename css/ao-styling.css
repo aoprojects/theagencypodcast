@@ -35,6 +35,9 @@ a:hover {
 	max-width: 900px;
 	margin: 0 auto;
 }
+.black {
+	color: black;
+}
 .blue {
 	color: #5CA3D1 !important;
 }
