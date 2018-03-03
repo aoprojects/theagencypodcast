@@ -9,12 +9,24 @@ a {
 a:hover {
 	text-decoration: none;
 }
+#article-1-hover-effect-example li:hover {
+	color: red;
+	transition: 0.2s ease;
+	transform: translate(15px, 0);
+}
 #agile-sign-up-form {
 	margin: 0 auto;
 	text-align: center;
 }
 #agile-sign-up-form .form-control {
 
+}
+.arrow-styling {
+	font-size: 30px;
+	color: red;
+	position: relative;
+	top: 15px;
+	left: 5px;
 }
 #articles-page a {
 	color: black !important;
