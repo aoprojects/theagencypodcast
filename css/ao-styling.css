@@ -139,6 +139,9 @@ h6 a {
 h6 a:hover {
 	color: #D95450;;
 }
+.image-icon-size img {
+	max-height: 140px;
+}
 #consulting-page .header {
 	padding: 40px 100px 10px 100px !important;
 	/*max-height: 120px;*/
