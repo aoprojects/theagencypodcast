@@ -63,6 +63,11 @@ body {
 .btn-danger a {
 	color: white;
 }
+.caution-icon {
+	position: relative;
+	top: 0px;
+	left: -130px;
+}
 .centered {
 	margin: 0 auto;
 }
