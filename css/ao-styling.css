@@ -42,7 +42,10 @@ a:hover {
 	left: 5px;
 }
 #articles-page a {
-	color: black !important;
+	color: black;
+}
+#articles-page .btn-danger a {
+	color: white !important;
 }
 #articles-page h3 {
 	font-size: 28px;
@@ -73,8 +76,11 @@ a:hover {
 body {
 
 }
+.btn-danger {
+	color: white !important;
+}
 .btn-danger a {
-	color: white;
+	color: white !important;
 }
 .caution-icon {
 	position: relative;
