@@ -4,7 +4,7 @@
 $blue: #5CA3D1;
 
 a {
-	color: black;
+	color: black !important;
 }
 a:hover {
 	text-decoration: none;
@@ -16,14 +16,24 @@ a:hover {
 #agile-sign-up-form .form-control {
 
 }
+#articles-page a {
+	color: black !important;
+}
 #articles-page h3 {
 	font-size: 28px;
 }
-#articles-apge p, ul {
-	font-size: 16px;
+#articles-page p {
+	margin: 20px 10px;
+}
+#articles-page p, ol {
+	font-size: 18px;
 }
 #articles-page h3 {
 	color: red;
+}
+.article-section {
+	max-width: 900px;
+	margin: 0 auto;
 }
 .blue {
 	color: #5CA3D1 !important;
