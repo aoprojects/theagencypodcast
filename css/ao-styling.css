@@ -63,13 +63,15 @@ a:hover {
 	max-width: 900px;
 	margin: 0 auto;
 }
+.background-gray {
+	background-color: #ddd;
+}
 .black {
 	color: black;
 }
 .blue {
 	color: #5CA3D1 !important;
 }
-
 .blue-lighter {
 	color: #ACD0E7 !important;
 }
