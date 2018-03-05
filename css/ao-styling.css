@@ -116,8 +116,9 @@ body {
 	z-index: 15;
 }
 #desktop-nav ul {
-	max-width: 400px;
+	max-width: 430px;
 	float: right;
+	box-shadow: 5px 0px 5px #ddd;
 }
 #desktop-nav ul li {
 	text-decoration: none;
