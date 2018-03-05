@@ -104,8 +104,11 @@
             <fieldset>
             <!-- Form Name -->
             <div class="text-center max-width-500">
-              <legend class="text-left">Stay in touch:</legend>
+              <a href="#collapseMailingList1" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="#collapseMailingList1">
+                <legend class="text-center">Stay in touch</legend>
+              </a>
             </div>
+            <!-- div for info about the form -->
             <div>
               <input type="hidden" id="_agile_form_name" name="_agile_form_name" value="Subscribe to AlisonOstendorf.com">
               <input type="hidden" id="_agile_domain" name="_agile_domain" value="alisonostendorf">
@@ -117,27 +120,30 @@
               <input type="hidden" id="_agile_form_id" name="_agile_form_id" value="5740201309634560">
             </div>
             <!-- Text input-->
-            <div class="agile-group">
+            <!-- all will show or collapse via above toggle -->
+            <div class="collapse" id="collapseMailingList1">
               <div>
-              <input maxlength="250" id="agilefield-1" name="first_name" type="text" placeholder="Your Name" class="agile-height-default">
+                <div>
+                  <input maxlength="250" id="agilefield-1" name="first_name" type="text" placeholder="Your Name" class="agile-height-default">
+                </div>
+                <div class="agile-custom-clear"></div>
               </div>
-              <div class="agile-custom-clear"></div>
-            </div>
-            <!-- Text input-->
-            <div>
+              <!-- Text input-->
               <div>
-              <input maxlength="250" id="agilefield-2" name="email" type="email" placeholder="Email Address" class="agile-height-default">
+                <div>
+                  <input maxlength="250" id="agilefield-2" name="email" type="email" placeholder="Email Address" class="agile-height-default">
+                </div>
+                <div class="agile-custom-clear"></div>
               </div>
-              <div class="agile-custom-clear"></div>
-            </div>
-            <!-- Button -->
-            <br>
-            <div class="agile-group">
-              <div class="agile-field agile-button-field">
-                <button type="submit" class="btn btn-lg btn-danger agile-button">Subscribe</button>
-                <br><span id="agile-error-msg"></span>
+              <!-- Button -->
+              <br>
+              <div>
+                <div class="agile-field agile-button-field">
+                  <button type="submit" class="btn btn-lg btn-danger agile-button">Subscribe</button>
+                  <br><span id="agile-error-msg"></span>
+                </div>
               </div>
-            </div>
+            </div><!-- end #collapseMailingList1 -->
             </fieldset>
             </form>
             <script type="text/javascript">
