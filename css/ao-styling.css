@@ -103,6 +103,9 @@ body {
 #index-page nav a {
 	color: gray;
 }
+#index-page #portfolio-items a {
+	color: red;
+}
 #desktop-nav {
 	position: fixed;
 	top: 0;
