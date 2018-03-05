@@ -78,6 +78,9 @@ a:hover {
 body {
 
 }
+.box-shadow {
+	box-shadow: 5px 5px 10px gray;
+}
 .btn-danger {
 	color: white !important;
 }
