@@ -407,6 +407,11 @@ section {
 	padding: 20px;
 	cursor: pointer;
 }
+@media only screen and (max-width: 419px) {
+	#articles-page .social-container a {
+		padding: 5px;
+	}
+}
 h1 {
 	color: gray;
 	padding-bottom: 10px;
