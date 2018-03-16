@@ -116,8 +116,20 @@ body {
 #index-page nav a {
 	color: gray;
 }
+#index-page #index-about-section {
+	max-width: 600px;
+	margin: 0 auto;
+	position: relative;
+	top: -100px;
+}
 #index-page #portfolio-items a {
 	color: red;
+}
+#index-page #social-container-index {
+	position: relative;
+	top: -100px;
+	margin: 0 auto;
+	width: 100%;
 }
 #desktop-nav {
 	position: fixed;
@@ -348,16 +360,18 @@ section {
 	color: #D95450;
 }
 .red-line-after:after {
- 	width:10%; 
+ 	width:150px; 
  	height:1px; 
  	background: red; 
  	content:"";
  	text-align: center;
  	margin: 0 auto;
  	margin-top: 40px;
+ 	position: relative;
+ 	top: 40px;
 }
 .red-line-before:before {
- 	width:10%; 
+ 	width:150px; 
  	height:1px; 
  	background: red; 
  	content:"";
@@ -376,10 +390,10 @@ section {
  	position: relative;
  	top: -20px;
 }
-#social-container img {
+.social-container img {
 	color: gray;
 }
-#social-container a {
+.social-container a {
 	padding: 20px;
 	cursor: pointer;
 }
