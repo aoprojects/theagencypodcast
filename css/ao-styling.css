@@ -59,6 +59,16 @@ a:hover {
 #articles-page h3 {
 	color: red;
 }
+#articles-page #social-container {
+	position: absolute;
+	top: 30px;
+	width: 100%;
+	margin: 0 auto;
+}
+#articles-page #articles-stay-in-touch-button {
+	position: relative;
+	top: -60px;
+}
 .article-section {
 	max-width: 900px;
 	margin: 0 auto;
