@@ -131,6 +131,12 @@ body {
 	margin: 0 auto;
 	width: 100%;
 }
+@media only screen and (max-width: 767px) {
+	#index-page #social-container-index p {
+		position: relative;
+		top: 50px;
+	}
+}
 #desktop-nav {
 	position: fixed;
 	top: 0;
