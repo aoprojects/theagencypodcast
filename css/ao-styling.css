@@ -122,6 +122,10 @@ body {
 	position: relative;
 	top: -100px;
 }
+#index-page #index-about-section p {
+	font-size: 16px;
+	line-height: 1.5;
+}
 #index-page #portfolio-items a {
 	color: red;
 }
