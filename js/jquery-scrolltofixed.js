@@ -387,7 +387,7 @@
             (!!window.requestAnimationFrame) ? requestAnimationFrame(checkScroll) : checkScroll();
         }
 
-        // From: http://kangax.github.com/cft/#IS_POSITION_FIXED_SUPPORTED
+        // From: https://kangax.github.com/cft/#IS_POSITION_FIXED_SUPPORTED
         var isPositionFixedSupported = function() {
             var container = document.body;
 
