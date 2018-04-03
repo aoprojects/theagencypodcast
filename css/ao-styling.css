@@ -435,6 +435,11 @@ h1 {
 /* begin media query specific styling below */
 @media only screen and (min-width: 768px) and (max-width: 888px) {
 	.taller-on-tablet {
+		height: 500px !important;
+	}
+}
+@media only screen and (min-width: 889px) {
+	.taller-on-tablet {
 		height: 480px !important;
 	}
 }
