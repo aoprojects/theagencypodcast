@@ -415,6 +415,17 @@ section {
 	padding: 20px;
 	cursor: pointer;
 }
+.stronger {
+	font-weight: 550;
+}
+.tagline2 {
+	position: relative;
+	width: 100%;
+	top: 50px;
+	line-height: 1.5;
+	font-family: courier new;
+	text-transform: lowercase;
+}
 @media only screen and (max-width: 419px) {
 	#articles-page .social-container a {
 		padding: 5px;
