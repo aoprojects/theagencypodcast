@@ -109,6 +109,11 @@ body {
 	position: relative;
 	top: 15px;
 }
+@media only screen and (max-width: 484px) {
+	#coming-soon {
+		font-size: 22px;
+	}
+}
 #consulting-page main p, #consulting-page main ul li {
 	font-size: 18px;
 }
