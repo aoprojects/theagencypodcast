@@ -213,6 +213,9 @@ body {
 #desktop-nav ul li:last-child {
 	padding-right: 25px;
 }
+#desktop-nav ul li a {
+	color: black;
+}
 #desktop-nav ul li a:hover {
 	color: red;
 }
