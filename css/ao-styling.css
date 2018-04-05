@@ -345,7 +345,6 @@ h6 a:hover {
 	float: left;
 
 }
-
 #nav-desktop ul li a {
 	padding: 20px 25px;
 	/*color: red;*/
@@ -363,10 +362,14 @@ h6 a:hover {
 	top: 50px;
 	right: 40px;
 }
-
 .no-border-before {
 	box-shadow: none !important;
 	border-top: none;
+}
+.page-title {
+	padding-left: 20px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 200;
 }
 #portfolio-items {
 	padding: 0;
