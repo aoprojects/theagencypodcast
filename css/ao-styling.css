@@ -77,6 +77,7 @@ a:hover {
 .article-section {
 	max-width: 900px;
 	margin: 0 auto;
+	margin-top: 50px;
 }
 .article-thumbnail {
 	height: 250px;
@@ -158,9 +159,14 @@ body {
 	font-size: 18px;
 }
 #full-article-page h1 {
-	position: absolute;
-	top: -10px !important;
-	font-size: 36px;
+	position: fixed;
+	top: 10px;
+	font-size: 20px;
+	height: 60px;
+	margin: 5px;
+}
+@media only screen and (min-width: 480px) {
+
 }
 #full-article-page #social-container {
 	position: absolute;
