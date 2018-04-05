@@ -366,10 +366,16 @@ h6 a:hover {
 	box-shadow: none !important;
 	border-top: none;
 }
-.page-title {
+.page-name h1 {
 	padding-left: 20px;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 200;
+}
+@media only screen and (max-width: 420px) {
+	.page-name h1 {
+		font-size: 18px !important;
+		padding-left: 15px;
+	}
 }
 #portfolio-items {
 	padding: 0;
