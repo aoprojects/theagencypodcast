@@ -157,6 +157,10 @@ body {
 #consulting-page main p, #consulting-page main ul li {
 	font-size: 18px;
 }
+#full-article-page h1 {
+	position: absolute;
+	top: 250px !important;
+}
 /*for simple desktop navigation*/
 #index-page nav a {
 	color: gray;
