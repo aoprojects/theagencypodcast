@@ -159,7 +159,13 @@ body {
 }
 #full-article-page h1 {
 	position: absolute;
-	top: 250px !important;
+	top: -10px !important;
+	font-size: 36px;
+}
+#full-article-page #social-container {
+	position: absolute;
+	top: 10px;
+	right: 10px;
 }
 /*for simple desktop navigation*/
 #index-page nav a {
