@@ -61,9 +61,13 @@ a:hover {
 }
 #articles-page #social-container {
 	position: absolute;
-	top: 30px;
+	top: 90px;
 	width: 100%;
 	margin: 0 auto;
+}
+#articles-page .tagline2 {
+	position: relative;
+	top: -30px;
 }
 #articles-page #articles-stay-in-touch-button {
 	position: relative;
