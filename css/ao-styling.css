@@ -76,14 +76,18 @@ a:hover {
 .article-thumbnail {
 	height: 250px;
 	width: 250px;
-	background-color: #ddd;
-	box-shadow: 5px 5px 5px #eee;	
+	background-color: #303030;
+	box-shadow: 5px 5px 3px #eee;	
 	margin: 10px;
-	float: left;
+}
+.article-thumbnail:hover {
+	outline: 1px solid red;
+	transform: ease 0.1s;
+	cursor: pointer;
 }
 .article-thumbnail h2 {
 	color: white;
-	font-size: 16px;
+	font-size: 26px;
 }
 .background-gray {
 	background-color: #ddd;
