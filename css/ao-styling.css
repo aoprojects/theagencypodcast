@@ -75,7 +75,8 @@ a:hover {
 }
 .article-thumbnail {
 	height: 250px;
-	width: 250px;
+	min-width: 230px;
+	/*width: 250px;*/
 	background-color: #303030;
 	box-shadow: 5px 5px 3px #eee;	
 	margin: 10px;
@@ -87,7 +88,7 @@ a:hover {
 }
 .article-thumbnail h2 {
 	color: white;
-	font-size: 26px;
+	font-size: 24px;
 }
 .background-gray {
 	background-color: #ddd;
