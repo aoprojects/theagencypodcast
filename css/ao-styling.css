@@ -442,6 +442,9 @@ section {
 .red {
 	color: #D95450;
 }
+.red:hover {
+	color: #D95450;
+}
 .red-line-after:after {
  	width:150px; 
  	height:1px; 
