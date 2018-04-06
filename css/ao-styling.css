@@ -551,7 +551,7 @@ h1 {
 }
 @media only screen and (min-width: 570px) and (max-width: 767px) {
 	/*for styling of resume columns on xs size*/
-	.col-xs-12 {
+	#resume-page .col-xs-12 {
 		width: 400px !important;
 		margin-left: 20% !important;
 	}
@@ -561,14 +561,14 @@ h1 {
 	}
 }
 @media only screen and (min-width: 470px) and (max-width: 570px) {
-	.col-xs-12 {
+	#resume-page .col-xs-12 {
 		width: 400px !important;
 		margin-left: 10% !important;
 
 	}
 }
 @media only screen and (max-width: 470px) {
-	.col-xs-12 {
+	#resume-page .col-xs-12 {
 		width: 330px !important;
 		margin-left: 5% !important;
 
