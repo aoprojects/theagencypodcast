@@ -387,11 +387,6 @@ h6 a:hover {
 	box-shadow: none !important;
 	border-top: none;
 }
-.ol-number-styling li {
-	font-weight: 24px;
-	list-style: decimal;
-}
-/*test*/
 ol.simple-list {
     list-style-type: none;
     list-style-type: decimal !ie; /*IE 7- hack*/
@@ -424,8 +419,6 @@ ol.simple-list > li:before {
     content: counter(li-counter);
     counter-increment: li-counter;
 }
-
-/*test*/
 .page-name h1 {
 	padding-left: 20px;
 	font-family: 'Montserrat', sans-serif;
