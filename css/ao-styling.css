@@ -545,6 +545,9 @@ h1 {
 	color: #5CA3D1;
 	font-size: 16px;
 }
+.text-color2 {
+	color: gray;
+}
 
 /* begin media query specific styling below */
 @media only screen and (min-width: 768px) and (max-width: 888px) {
