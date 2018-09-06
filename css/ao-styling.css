@@ -308,6 +308,9 @@ h6 a:hover {
 	padding: 40px 100px 10px 100px !important;
 	/*max-height: 120px;*/
 }
+.header-no-bottom-padding {
+	padding: 40px 100px 10px 100px !important;
+}
 .green {
 
 }

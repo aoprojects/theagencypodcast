@@ -50,6 +50,10 @@ button:visited, button:active, button:focus, button:hover {
 	outline-width: 0 !important;
 
 }
+.input-font {
+	font-size: 16px;
+	font-weight: 300;
+}
 legend {
 	font-size: 18px;
 	font-weight: 200;
