@@ -343,6 +343,15 @@ h6 a:hover {
 #menu-toggle:hover, #menu-toggle:active, #menu-toggle:visited {
 	border-radius: 0px;
 }
+#microphone-icon-overlay {
+	position: absolute;
+	top: 20px;
+	left: -130px;
+	z-index: -5;
+	max-width: 60vw;
+	width: 400px;
+	height: 700px;
+}
 #nav-desktop {
 	position: absolute;
 	top: 20px;
