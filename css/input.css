@@ -20,6 +20,7 @@
 	line-height: 30px;
 	color: red;
 	font-weight: 200;
+	background-color: transparent;
 }
 .field-input-area input:hover, .field-input-area input:active, .field-input-area input:focus, textarea:hover, textarea:active, textarea:focus {
 	/* todo why upon focus is it turning blue outline?*/
@@ -36,6 +37,7 @@
 	min-width: 300px;
 	border-radius: 0;
 	outline-width: 0;
+	background-color: transparent;
 }
 .field-input-area:focus {
 	box-shadow-top: none;
@@ -60,4 +62,10 @@ legend {
 	padding: 15px;
 }
 
+.well {
+	max-width: 460px;
+	margin: 0 auto;
+	padding-bottom: 50px;
+	
+}
 
