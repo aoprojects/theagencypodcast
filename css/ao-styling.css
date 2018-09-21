@@ -138,6 +138,10 @@ body {
 .btn-danger a {
 	color: white !important;
 }
+.btn-default {
+	border: 1px solid red;
+	color: red;
+}
 .caution-icon {
 	position: relative;
 	top: 0px;
