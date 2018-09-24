@@ -5,11 +5,14 @@
 <meta name="viewport" content="width=device-width, maximum-scale=1">
 <!-- the below tag is for google apps email to prove the domain connection -->
 <meta name="google-site-verification" content="EGYY_VGeti3PAewp3bIrGTCw6KznNeRgCvAegtLlgjs" />
-<title>The Agency Podcast | Subscribe to our Newsletter</title>
+
+<title>The Agency Podcast</title>
 <link rel="icon" href="favicon.png" type="image/png">
 <link rel="shortcut icon" href="favicon.ico" type="img/x-icon">
+
 <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,800italic,700italic,600italic,400italic,300italic,800,700,600' rel='stylesheet' type='text/css'>
+
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
 <link href="css/template-styling.css" rel="stylesheet" type="text/css">
 <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
@@ -22,7 +25,9 @@
 <link href="https://fonts.googleapis.com/css?family=Rammetto+One" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
 <!--[if IE]><style type="text/css">.pie {behavior:url(PIE.htc);}</style><![endif]-->
+
 <script type="text/javascript" src="js/jquery.1.8.3.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.js"></script>
 <script type="text/javascript" src="js/jquery-scrolltofixed.js"></script>
@@ -31,53 +36,73 @@
 <script type="text/javascript" src="js/wow.js"></script>
 <script type="text/javascript" src="js/classie.js"></script>
 <script src="https://use.fontawesome.com/9aee4020bc.js"></script>
+
+
 <!--[if lt IE 9]>
     <script src="js/respond-1.1.0.min.js"></script>
     <script src="js/html5shiv.js"></script>
     <script src="js/html5element.js"></script>
 <![endif]-->
+
+
 </head>
 <body id="index-page">
   <div id="wrapper">
+      <!-- Sidebar -->
+      <div id="sidebar-wrapper">
+      <!-- the sidebar-nav will show only on mobile sizes, sm and xs widths -->
+          <ul class="sidebar-nav">
+              <li class="sidebar-brand">
+                  <a href="index.html">The Agency Podcast</a>
+              </li>
+              <li>
+                  <a href="#">Page2</a>
+              </li>
+              <li>
+                  <a href="#">Page3</a>
+              </li>
+            <!--   <li>
+                  <a href="books-by-Alison.html">Books&nbsp;by&nbsp;Alison</a>
+              </li> -->
+          </ul>
+      </div><!-- end sidebar wrapper -->
       <!-- /#sidebar-wrapper -->
-      <div>
-        <nav id="desktop-nav">
+      <div id="page-content-wrapper">
+          <nav id="desktop-nav">
             <ul>
-              <li><a href="index.html">Podcast</a></li>
+              <li class="current-page"><a href="index.html">Podcast</a></li>
               <li><a href="sign-up-for-our-newsletter.html">Newsletter</a></li>
-              <li class="current-page"><a href="get-my-digital-agency-interviewed.html">Be Interviewed</a></li>
+              <li><a href="get-my-digital-agency-interviewed.html">Be Interviewed</a></li>
               <li><a href="the-digital-agency-book.html">The Book</a></li>
             </ul>            
-          </nav>      
-      </div>
-      <div id="newsletter-sign-up-container">     
-        <header class="header header-no-bottom-padding" id="header"><!--header-start-->
-          <!-- the nav-desktop will show only on desktop sizes, md and lg widths and larger -->
-          <!-- todo unhide for md and lg when it's time to use nav -->
-          <nav id="nav-desktop" class="hidden-xs hidden-sm animated fadeInDown delay-07s">                
-          </nav>
-          <div id="microphone-icon-overlay" class="animated fadeInLeft delay-09s">
-            <img src="images/microphone-red-tilted-longer-cable.png">
-          </div><!-- end #microphone-icon-overlay-->              
-          <div class="container">
-            <figure class="animated wow fadeInDown delay-07s">
-                <a href="get-my-digital-agency-interviewed.html">
-                  <h2>Want To Be Interviewed For Our Podcast?</h2>
-                </a>
-            </figure> 
-          </div><!-- end .container -->
-        </header><!--header-end-->
-        <main class="wow fadeInDown delay-07s">
-          todo set up calendly link to schedule an interview
-          <br>
-          <br>
-          <div class="text-center">
-            <a href="mailto:alison@alisonostendorf.com" class="btn btn-lg btn-default">Email Us Directly</a>
-          </div>
-        </main>
-      </div><!-- newsletter sign up container -->
-      <div class="clearfix"></div>
-          <footer class="footer animated fadeInUp delay-07s">
+          </nav>        
+          <header class="header" id="header"><!--header-start-->
+            <!-- the nav-desktop will show only on desktop sizes, md and lg widths and larger -->
+            <!-- todo unhide for md and lg when it's time to use nav -->
+            <nav id="nav-desktop" class="hidden-xs hidden-sm animated fadeInDown delay-07s">
+              <ul>
+                <!-- <li><a href="index.html">Startups</a></li>
+                <li><a href="consulting.html">Consulting</a></li> -->
+                <!-- <li><a href="books-by-Alison.html">Books</a></li> -->
+              </ul>
+              <!-- <p id="newsletter-desktop-sign-up">Insert Newsletter sign up here</p> -->
+            </nav>
+            <div id="microphone-icon-overlay" class="animated fadeInLeft delay-09s">
+              <img src="images/microphone-red-tilted-longer-cable.png">
+            </div><!-- end #microphone-icon-overlay-->
+          </header><!--header-end-->
+          <main>
+            <h1>The Digital Agency Book</h1>
+            <h2>Written for digital agencies about digital agencies.</h2>
+            <h3>A insider's book for the design, development, coding, social media, marketing, and online services industries.</h3>
+            <p>Copy about the design industry and how to get the book.</p>
+            <div class="text-center">
+              <a href="" class="btn btn-danger btn-lg">Preorder The Book</a>  
+            </div>
+            
+          </main>
+          <div class="clearfix"></div>
+          <footer class="footer">
               <div class="container">
                   <div class="text-center">
                     <h6><a href="http://theagencypodcast.com/">The Agency Podcast</a></h6>
@@ -107,7 +132,8 @@
                   Licenseing information is available at: https://bootstraptaste.com/license/
                   You can buy this theme without footer links online at: https://bootstraptaste.com/buy/?theme=Knight
               -->
-          </footer>          
+          </footer>
+
   </div><!-- end #sidebar-wrapper -->
   <script type="text/javascript">
       $(document).ready(function(e) {
