@@ -331,6 +331,9 @@ h6 a:hover {
 	padding-top: 35px;
 	/*box-shadow: 1px 1px 5px rgba(92,163,209,0.3); /* transparent blue */*/
 }
+main {
+	background-image: image-ur("images/audio-device-macro-55800.jpg");
+}
 .max-width-500 {
 	max-width: 600px;
 	margin: 0 auto;
