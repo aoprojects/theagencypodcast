@@ -312,6 +312,7 @@ body #background-image {
 	max-width: 60vw;
 	width: 400px;
 	height: 700px;
+	display: hidden;
 }
 #nav-desktop {
 	position: absolute;
