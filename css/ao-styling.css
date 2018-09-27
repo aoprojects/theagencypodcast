@@ -149,15 +149,29 @@ body {
 	z-index: 15;
 }
 #desktop-nav ul {
-	max-width: 430px;
+	max-width: 530px;
 	float: right;
 	box-shadow: 5px 0px 5px #ddd;
+}
+@media only screen and (max-width: 500px) {
+	#desktop-nav ul {
+		margin: 0 auto;
+	}
 }
 #desktop-nav ul li {
 	text-decoration: none;
 	list-style-type: none;
 	padding: 15px 20px;
 	float: left;
+}
+@media only screen and (max-width: 500px) {
+	#desktop-nav ul {
+		margin: 0 auto;
+	}
+	#desktop-nav ul li {
+		padding: 15px 10px;
+		text-align: center;
+	}
 }
 #desktop-nav ul li:last-child {
 	padding-right: 25px;
